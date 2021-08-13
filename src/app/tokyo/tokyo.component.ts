@@ -6,22 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tokyo.component.css']
 })
 export class TokyoComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-  
-  wards = [ 
+  wards = [
     {
-      name: "世田谷",
-      population:200000,
+      name: '世田谷',
+      population: 200000,
       square: 30000
     },
     {
-      name: "渋谷",
-      population:500000,
+      name: '渋谷',
+      population: 500000,
       square: 20000
+    },
+    {
+      name: '',
+      population: 10000,
+      square: 1
     }
-  ]
+  ];
+  liveHere() {
+    window.alert('ここに住みます！');
+  }
+  name: string;
 }

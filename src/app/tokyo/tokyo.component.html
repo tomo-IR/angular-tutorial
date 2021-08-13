@@ -1,0 +1,6 @@
+<ul *ngFor="let ward of wards">
+  <li *ngIf="ward.name">区名:{{ ward.name }}</li>
+  <li>人口:{{ ward.population }}人</li>
+  <li>面積:{{ ward.square }}m2</li>
+  <button (click)="liveHere()">ここに住みたい！！</button>
+</ul>
